@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Rock Cycle Simulator</title>
+  <title>Madison BINGO Caller</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,71 +16,17 @@
 </head>
 
 <script>
-function StationOne()
+function Number()
 {
-    var myarray= new Array("Go to Sedimentary Rock", "Go to Sedimentary Rock", "Go to Sedimentary Rock", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station");
+    var myarray= new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
+   document.getElementById("number").innerHTML=random;
 }
-function StationTwo()
+function Letter()
 {
-    var myarray= new Array("Go to Metamorphic Rock", "Go to Metamorphic Rock", "Go to Metamorphic Rock", "Stay under High Temperature and Pressure at this station", "Stay under High Temperature and Pressure at this station", "Stay under High Temperature and Pressure at this station");
+    var myarray= new Array("B", "I", "N", "G", "O");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationThree()
-{
-    var myarray= new Array("Go to Compaction and Cementation", "Go to Compaction and Cementation", "Continue as Sediment at this station", "Continue as Sediment at this station", "Continue as Sediment at this station", "Continue as Sediment at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationFour()
-{
-    var myarray= new Array("Go to Weathering and Erosion", "Go to Weathering and Erosion", "Go to High Temperature and Pressure", "Go to High Temperature and Pressure", "Go to Melting", "Go to Melting");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationFive()
-{
-    var myarray= new Array("Go to Weathering and Erosion", "Go to Weathering and Erosion", "Go to Weathering and Erosion", "Go to Weathering and Erosion", "Continue Exposure at the Surface at this station", "Continue Exposure at the Surface at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationSix()
-{
-    var myarray= new Array("Go to Melting", "Go to Melting", "Go to Exposure at the Surface", "Go to Exposure at the Surface", "Go to High Temperature and Pressure", "Go to High Temperature and Pressure");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationSeven()
-{
-    var myarray= new Array("Go to High Temperature and Pressure", "Go to High Temperature and Pressure", "Go to Melting", "Go to Melting", "Go to Weathering and Erosion", "Go to Weathering and Erosion");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationEight()
-{
-    var myarray= new Array("Go to Magma", "Go to Magma", "Go to Magma", "Continue Melting at this station", "Continue Melting at this station", "Continue Melting at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationNine()
-{
-    var myarray= new Array("Go to Igneous Rock", "Go to Igneous Rock", "Go to Igneous Rock", "Continue Cooling and Hardening at this station", "Continue Cooling and Hardening at this station", "Continue Cooling and Hardening at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationTen()
-{
-    var myarray= new Array("Go to Cooling and Hardening", "Go to Cooling and Hardening", "Continue as Magma at this station", "Continue as Magma at this station", "Continue as Magma at this station", "Continue as Magma at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationEleven()
-{
-    var myarray= new Array("Go to Sediment", "Go to Sediment", "Go to Sediment", "Continue Weathering and Eroding at this station", "Continue Weathering and Eroding at this station", "Continue Weathering and Eroding at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
+   document.getElementById("letter").innerHTML=random;
 }
   
 </script>
@@ -98,22 +44,11 @@ function StationEleven()
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Rock Cycle Simulator</h1>
-        <p class="lead">Choose a station to start at and click the station button.</br>Follow the instructions to go to another station OR continue at the current station.</br>Write down in your Google Doc which station number you stay at or go to for every click.</br>You will be using this information to make a chart of your travels through the rock cycle.</p>
-
-        <h2 class="alert alert-info border border-info rounded-15" id="s1"></h2>
+        <h1 class="mt-5">Madison BINGO Caller</h1>
+        <h2 class="alert alert-info border border-info rounded-15" id="letter"></h2>
+        <h2 class="alert alert-info border border-info rounded-15" id="number"></h2>
         <br>
-        <p><input type="button" id="btnSymbol" value="Station 1 Compaction and Cementation" onclick="StationOne();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 2 High Temperature and Pressure" onclick="StationTwo();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 3 Sediment" onclick="StationThree();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 4 Igneous Rock" onclick="StationFour();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 5 Exposure at the Surface" onclick="StationFive();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 6 Metamorphic Rock" onclick="StationSix();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 7 Sedimentary Rock" onclick="StationSeven();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 8 Melting" onclick="StationEight();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 9 Cooling and Hardening" onclick="StationNine();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 10 Magma" onclick="StationTen();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 11 Weathering and Erosion" onclick="StationEleven();" /></p>
+        <p><input type="button" id="btnSymbol" value="CLICK" onclick="Number(); Letter();" /></p>
         </div>
     </div>
   </div>
